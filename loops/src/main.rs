@@ -1,5 +1,10 @@
 fn main() {
-    println!("{}",fahrenheit_to_celsius(32.0))
+    let s1 = String::from("ffjf");
+    let s2 = s1.clone();
+    println!("{}", s1);
+
+    let x = 3;
+    let y = x.clone();
 }
 
 fn loop_fn() {
