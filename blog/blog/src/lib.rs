@@ -1,5 +1,5 @@
-// use std::cmp::Ordering;
-//
+use std::cmp::Ordering;
+
 #[cfg(test)]
 mod tests {
     #[test]
@@ -53,8 +53,8 @@ impl PendingReviewPost {
     }
 }
 
-////OOP
-//
+// /OOP
+
 // trait State {
 //     fn request_review(self: Box<Self>) -> Box<dyn State>;
 //     fn approve(self: Box<Self>) -> Box<dyn State>;
@@ -89,16 +89,13 @@ impl PendingReviewPost {
 //         self
 //     }
 //
-//     fn approve(mut self:  Box<Self>) -> Box<dyn State> {
+//     fn approve(mut self: Box<Self>) -> Box<dyn State> {
 //         self.count_to_publish += 1;
 //         match self.count_to_publish.cmp(&2) {
 //             Ordering::Less => {
 //                 self
 //             }
-//             Ordering::Equal => {
-//                 Box::new(Published {})
-//             }
-//             Ordering::Greater => {
+//             _ => {
 //                 Box::new(Published {})
 //             }
 //         }
@@ -168,5 +165,5 @@ impl PendingReviewPost {
 //         }
 //     }
 // }
-//
-//
+
+
